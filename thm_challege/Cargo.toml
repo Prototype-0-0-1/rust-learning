@@ -1,0 +1,10 @@
+[package]
+name = "thm_challege"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rot13 = "0.1.1"
+base64 = "0.13.0"
