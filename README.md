@@ -109,7 +109,7 @@ Placeholder traits
     // Binary: 1010 Hex: a Octal: 12
     The value was converted to respective formats (Binary format / Hexadecimal format or Octal format)
 
-// Placeholder for debug trait
+Placeholder for debug trait
 
     println!("{:?}", (12, true, "hello"));
     // (12, true, "hello")
