@@ -24,3 +24,48 @@ Think IDE but more intelligent. Rust Analyzer clearly labels what is wrong with 
 
 [The Rust Book & Docs](https://doc.rust-lang.org/stable/book/)
 Rust has a book, called The Book which details everything you could want to know about Rust. Neatly chaptered, easily searchable and at your disposal for free. If this isn't good enough, thanks to Rust's documentation comments almost every library you'll use will have extensive documentation online.
+
+## Rust related commands
+
+rustup
+
+    It is the version manager.
+    Perform "rustup --verison" to see the version
+    Perform "rustup update" to update
+
+rustc
+
+    It is the compiler
+
+cargo
+
+    It is the package manager.
+
+## Cargo related commands to build and run
+
+Once the project is created using "cargo init" or "cargo new"
+
+We can perform "cargo run" to compile and then run the code
+
+    - The command will create a target folder (./target/)
+    - a debug folder will be created under it (./target/debug/)
+    - Under that, we will see the executeable (./target/debug/<executeable for the current project>)
+    - And then the code will also be ran
+    Note: This will be unoptimized
+
+We can perform "cargo build" to build the program / compile the project
+
+    - The command will create a target folder (./target/)
+    - a debug folder will be created under it (./target/debug/)
+    - Under that, we will see the executeable (./target/debug/<executeable for the current project>)
+    - The code will not be run
+    Note: This will be unoptimized
+
+We can perform "cargo build --release" to compile it for production / it will create an optimized build
+
+    - The command will create a target folder (./target/)
+    - a debug folder will be created under it (./target/debug/)
+    - Under that, we will see the executeable (./target/debug/<executeable for the current project>)
+    - A release folder will be created under the target folder (./target/release/)
+    - Here, there will be the optimized executeble (./target/debug/<optimized executeable for the current project>)
+    Note: This will be optimized.
