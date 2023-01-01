@@ -69,3 +69,55 @@ We can perform "cargo build --release" to compile it for production / it will cr
     - A release folder will be created under the target folder (./target/release/)
     - Here, there will be the optimized executeble (./target/debug/<optimized executeable for the current project>)
     Note: This will be optimized.
+
+## Ways to println! to console
+
+*This is taken from Traversy Media's rust crash course
+
+Simple Print to console
+
+    println!("Hello from the print.rs file");
+
+Basic Formatting
+
+    println!("{} is from {}", "Brad", "Mass");
+    // Brad is from Mass
+    Here each {} is replaced by it's corresponding value, where each value is passed as arguments in the println! statement
+
+Positional Arguments
+
+    println!(
+        "{0} is from {1} and {0} likes to {2}",
+        "Brad", "Mass", "code"
+    );
+    // Brad is from Mass and Brad likes to code
+    Here {0}'th argument was referred twice, so that it appears twice
+
+Named Arguments
+
+    println!(
+        "{name} likes to play {activity}",
+        name = "John",
+        activity = "Baseball"
+    );
+    // John likes to play Baseball
+    Similarly, here named arguments were used to specify which argument goes where
+
+Placeholder traits
+
+    println!("Binary: {:b} Hex: {:x} Octal: {:o}", 10, 10, 10);
+    // Binary: 1010 Hex: a Octal: 12
+    The value was converted to respective formats (Binary format / Hexadecimal format or Octal format)
+
+// Placeholder for debug trait
+
+    println!("{:?}", (12, true, "hello"));
+    // (12, true, "hello")
+    This would be used to print any debug trait. Here, it printed a tuple.
+    *I think {:?} means any type of data which can be represented as a string would be able to get printed
+
+Basic math
+
+    println!("10 + 10 = {}", 10 + 10);
+    // 10 + 10 = 20
+    The calculation of the mathematical equation was given as it is in the print statement
